@@ -1,6 +1,6 @@
-### news_api_key = "8100c993c8224918a736cb583ce5438d"
-# export NEWSAPI_KEY="8100c993c8224918a736cb583ce5438d"
-#export OPENAI_API_KEY="8100c993c8224918a736cb583ce5438d""
+### news_api_key = ""
+# export NEWSAPI_KEY=""
+#export OPENAI_API_KEY="""
 
 ############## packages
 from crewai import Agent, Task, Crew, Process
@@ -16,8 +16,8 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.tools import DuckDuckGoSearchRun
 #########################################################
 
-os.environ["OPENAI_API_KEY"] = "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"
-openai.api_key = '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'
+os.environ["OPENAI_API_KEY"] = ""
+openai.api_key = ''
 os.environ["OPENAI_MODEL_NAME"] = "gpt-4-turbo-preview"
 embedding_function = OpenAIEmbeddings()
 llm = ChatOpenAI(model="gpt-4-turbo-preview")
