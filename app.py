@@ -15,18 +15,18 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_community.tools import DuckDuckGoSearchRun
 #########################################################
- 
-os.environ["OPENAI_API_KEY"] = ""
-openai.api_key = os.getenv("OPENAI_API_KEY")
+  
+###os.environ["OPENAI_API_KEY"] = ""
+#openai.api_key = os.getenv("OPENAI_API_KEY")
 os.environ["OPENAI_MODEL_NAME"] = "gpt-4-turbo-preview"
 embedding_function = OpenAIEmbeddings()
 llm = ChatOpenAI(model="gpt-4-turbo-preview")
 
 #########################################################################
- 
+   
 ##Tool 1 : Save the news article in the database.
 
-class SearchNewsDB:
+class SearchNewsDB: 
     @tool("News DB Tool")
     def news(query: str):
         """Fetch news articles and process their contents."""
