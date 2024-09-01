@@ -63,7 +63,7 @@ class SearchNewsDB:
             return retriever
         else:
             return "No content available for processing."
-  
+   
  
 # Tool 2 : Get the news articles from the database
 class GetNews:
